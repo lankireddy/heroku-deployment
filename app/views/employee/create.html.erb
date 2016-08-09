@@ -1,0 +1,13 @@
+<h3><u><center>this is employee create page</center></u></h3>
+<%= form_tag employee_show_path do %>
+<center>
+Name:     <%= text_field_tag 'name'%><br>
+Age:     <%= text_field_tag 'age'%><br>
+Address: <%= text_area_tag 'address'%><br>
+Email:  <%= text_field_tag 'email'%><br>
+dob:    <%= date_field_tag 'dob'%><br>
+gender: male: <%=  radio_button_tag 'gender', 'male'%>
+        female:<%=  radio_button_tag 'gender', 'female'%><br>
+Submit: <%= button_tag %><br>
+<% end %>
+</center>

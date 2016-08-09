@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schools</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<table width="100%" border="1"><tr><td><h1><center>The Green Apps</center></h1></td></tr></table>
+<table align="center" border="1">
+  	<tr>
+   		<td align="left" width="20%"><%= link_to 'show', employee_show_path %><br/>
+   		<%= link_to 'create', employee_create_path %></td>
+   		<td> <!-- Main body area -->
+			<%= yield %>
+		</td>
+   </tr>
+</table>
+<table width="100%" border="1"><tr><td><h1><center><%= "..................Thank You...................." %></center></h1></td></tr></table>
+
+</body>
+</html>
